@@ -22,6 +22,9 @@
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <GenerateCreateScript>False</GenerateCreateScript>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -59,5 +62,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="CheckNullColumns.sql" />
+    <None Include="RemoveExtraColumns.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CodeFile1.cs" />
   </ItemGroup>
 </Project>

@@ -12,5 +12,5 @@ WHERE TABLE_NAME = @TableName;
 SET @SQL = '
 SELECT COUNT(*) AS TotalRows, ' + @Cols + '
 FROM ' + QUOTENAME(@TableName) + ';';
-
+PRINT @SQL; -- For debugging purposes, you can comment this out in production
 EXEC sp_executesql @SQL;
